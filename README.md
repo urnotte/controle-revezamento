@@ -28,6 +28,10 @@ As informações eram compartilhadas por grupos de WhatsApp, contendo:
 
 O objetivo foi transformar esse processo em um banco de dados estruturado.
 
+## Modelo de Dados
+
+![DER](imagens/DER.png)
+
 ## Tecnologias
 
 - SQL
