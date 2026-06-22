@@ -63,43 +63,23 @@ Benefícios:
 
 ---
 
-## Separação dos Registros de Horário
+## Restrições de Integridade
 
-Os horários de chegada e saída foram armazenados em uma tabela específica (`tb_registro_horario`).
+Foram aplicadas restrições de integridade diretamente na estrutura das tabelas para garantir maior consistência dos dados armazenados.
 
-Essa decisão permite registrar múltiplos horários para diferentes períodos sem sobrecarregar o cadastro dos membros.
+Principais regras adotadas:
 
-Benefícios:
-
-* Histórico detalhado.
-* Melhor organização dos dados operacionais.
-* Facilidade para auditoria e consultas.
-
----
-
-## Controle Financeiro Independente
-
-As informações financeiras foram armazenadas em uma tabela própria (`tb_financeiro`), separada dos registros de participação.
-
-Essa abordagem permite controlar pagamentos e status financeiros de forma independente.
+* Utilização de `NOT NULL` em atributos obrigatórios.
+* Utilização de chaves primárias para identificação única dos registros.
+* Utilização de chaves estrangeiras para garantir a integridade referencial entre as tabelas.
+* Utilização de restrições `UNIQUE` em tabelas de domínio para evitar cadastros duplicados de tipos e status.
 
 Benefícios:
 
-* Maior flexibilidade para futuras regras financeiras.
-* Histórico completo de pagamentos.
-* Melhor organização das informações.
-
----
-
-## Cadastro de Locais e Escalas
-
-Os locais foram modelados em uma tabela independente (`tb_local`) e associados às escalas por meio da tabela `tb_escala`.
-
-Benefícios:
-
-* Evita duplicação de nomes de locais.
-* Facilita alterações cadastrais.
-* Permite reutilizar um mesmo local em diferentes escalas.
+* Redução de registros incompletos.
+* Maior confiabilidade das informações.
+* Prevenção de inconsistências entre tabelas.
+* Melhor qualidade dos dados para consultas e relatórios.
 
 ---
 
