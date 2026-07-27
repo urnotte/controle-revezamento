@@ -58,13 +58,14 @@ O sistema deve permitir o cadastro dos locais onde ocorrerão as atividades.
 
 ## RF06 – Cadastro de Escalas
 
-O sistema deve permitir registrar as escalas de atuação dos membros.
+O sistema deve permitir o cadastro das escalas de atuação.
 
-Cada escala deverá relacionar:
+Cada escala deverá estar vinculada a:
 
-- Membro
 - Semana
 - Local
+- Horário de início
+- Horário de término
 
 ---
 
@@ -72,19 +73,36 @@ Cada escala deverá relacionar:
 
 O sistema deve registrar a participação dos membros em cada escala.
 
-Cada participação deverá possuir um status.
+Cada participação deverá estar vinculada a:
+
+- Membro
+- Escala
+- Status de participação
 
 ---
 
 ## RF08 – Registro de Horários
 
-O sistema deve permitir registrar os horários de entrada e saída referentes às participações.
+O sistema deve permitir registrar um ou mais horários para cada participação.
+
+Cada registro de horário deverá armazenar:
+
+- Data da participação
+- Horário de entrada
+- Horário de saída
+- Situação da verificação
 
 ---
 
 ## RF09 – Controle Financeiro
 
-O sistema deve permitir registrar informações financeiras relacionadas às participações, quando aplicável.
+O sistema deve permitir registrar informações financeiras por semana de referência.
+
+O sistema deverá permitir:
+
+- pagamentos integrais;
+- pagamentos parciais;
+- registro de adiantamentos para semanas futuras.
 
 ---
 
