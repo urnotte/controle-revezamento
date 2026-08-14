@@ -1,6 +1,6 @@
 
 -- ==========================================================
--- Tabela: tb_tipo_membro
+-- Tabela: tipo_membro
 -- ==========================================================
 CREATE TABLE tb_tipo_membro (
     id_tipo INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -8,7 +8,7 @@ CREATE TABLE tb_tipo_membro (
 );
 
 -- ==========================================================
--- Tabela: tb_membro
+-- Tabela: membro
 -- ==========================================================
 CREATE TABLE tb_membro (
     id_membro INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -19,7 +19,7 @@ CREATE TABLE tb_membro (
 );
 
 -- ==========================================================
--- Tabela: tb_membro_tipo
+-- Tabela: membro_tipo
 -- ==========================================================
 CREATE TABLE tb_membro_tipo (
     id_membro INTEGER NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE tb_membro_tipo (
 );
 
 -- ==========================================================
--- Tabela: tb_local
+-- Tabela: local
 -- ==========================================================
 CREATE TABLE tb_local (
     id_local INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -38,7 +38,7 @@ CREATE TABLE tb_local (
 );
 
 -- ==========================================================
--- Tabela: tb_semana
+-- Tabela: semana
 -- ==========================================================
 CREATE TABLE tb_semana (
     id_semana INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -47,7 +47,7 @@ CREATE TABLE tb_semana (
 );
 
 -- ==========================================================
--- Tabela: tb_status_participacao
+-- Tabela: status_participacao
 -- ==========================================================
 CREATE TABLE tb_status_participacao (
     id_status_participacao INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -55,7 +55,7 @@ CREATE TABLE tb_status_participacao (
 );
 
 -- ==========================================================
--- Tabela: tb_status_financeiro
+-- Tabela: status_financeiro
 -- ==========================================================
 CREATE TABLE tb_status_financeiro (
     id_status_financeiro INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -63,7 +63,7 @@ CREATE TABLE tb_status_financeiro (
 );
 
 -- ==========================================================
--- Tabela: tb_escala
+-- Tabela: escala
 -- ==========================================================
 CREATE TABLE tb_escala (
     id_escala INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -74,7 +74,7 @@ CREATE TABLE tb_escala (
 );
 
 -- ==========================================================
--- Tabela: tb_participacao
+-- Tabela: participacao
 -- ==========================================================
 CREATE TABLE tb_participacao (
     id_participacao INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -85,7 +85,7 @@ CREATE TABLE tb_participacao (
 );
 
 -- ==========================================================
--- Tabela: tb_registro_horario
+-- Tabela: registro_horario
 -- ==========================================================
 CREATE TABLE tb_registro_horario (
     id_registro INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -97,7 +97,7 @@ CREATE TABLE tb_registro_horario (
 );
 
 -- ==========================================================
--- Tabela: tb_financeiro
+-- Tabela: financeiro
 -- ==========================================================
 CREATE TABLE tb_financeiro (
     id_financeiro INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
